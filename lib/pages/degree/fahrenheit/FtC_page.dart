@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../switch.dart';
 
 class ftc extends StatefulWidget {
   @override
@@ -15,9 +14,7 @@ class ftcState extends State<ftc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          actions: [switch_state()],
-        ),
+        appBar: AppBar(),
         floatingActionButton: FloatingActionButton(
             child: Icon(Icons.loop),
             onPressed: () {

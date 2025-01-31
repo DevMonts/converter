@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../switch.dart';
-
 class btr extends StatefulWidget {
   const btr({super.key});
 
@@ -16,9 +14,7 @@ class _btrState extends State<btr> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          actions: [switch_state()],
-        ),
+        appBar: AppBar(),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.loop),
           onPressed: () {
@@ -44,8 +40,7 @@ class _btrState extends State<btr> {
                   bitcoin_str = text;
                 },
                 decoration: InputDecoration(
-                    labelText: 'Bitcoin -> Real',
-                    border: OutlineInputBorder()),
+                    labelText: 'Bitcoin -> Real', border: OutlineInputBorder()),
                 keyboardType: TextInputType.number,
               ),
               SizedBox(

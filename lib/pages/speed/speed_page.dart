@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:grau/switch.dart';
 import 'KtM_page.dart';
 import 'MtK_page.dart';
 
@@ -14,10 +13,6 @@ class _speedState extends State<speed> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Conversor de Velocidade'),
-        actions: [switch_state()],
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

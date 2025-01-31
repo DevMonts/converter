@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../switch.dart';
-
 class dtr extends StatefulWidget {
   const dtr({super.key});
 
@@ -16,9 +14,7 @@ class _dtrState extends State<dtr> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          actions: [switch_state()],
-        ),
+        appBar: AppBar(),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.loop),
           onPressed: () {

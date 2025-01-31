@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../switch.dart';
-
 class dtb extends StatefulWidget {
   const dtb({super.key});
 
@@ -16,9 +14,7 @@ class _dtbState extends State<dtb> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          actions: [switch_state()],
-        ),
+        appBar: AppBar(),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.loop),
           onPressed: () {
@@ -44,7 +40,8 @@ class _dtbState extends State<dtb> {
                   dolar_str = text;
                 },
                 decoration: InputDecoration(
-                    labelText: 'Dólar -> Bitcoin', border: OutlineInputBorder()),
+                    labelText: 'Dólar -> Bitcoin',
+                    border: OutlineInputBorder()),
                 keyboardType: TextInputType.number,
               ),
               SizedBox(
